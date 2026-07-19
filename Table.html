@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .header {
+            background-color: aqua;
+        }
+
+        .header h1 {
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        .nav td {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .aside {
+            background-color: lightyellow;
+            vertical-align: top;
+            padding: 15px;
+        }
+
+        .article {
+            background-color: white;
+            vertical-align: top;
+            padding: 15px;
+        }
+
+        .footer {
+            background-color: lightcoral;
+            text-align: center;
+        }
+
+        .footer td {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" width="100%">
+
+        <!-- Header -->
+        <tr height="100px" class="header">
+            <td colspan="4">
+                <h1>My Website</h1>
+            </td>
+        </tr>
+
+        <!-- Nav -->
+        <tr height="40px" class="nav">
+            <td width="25%">Home</td>
+            <td width="25%">About</td>
+            <td width="25%">Services</td>
+            <td width="25%">Contact</td>
+        </tr>
+
+        <!-- Aside + Article -->
+        <tr height="450px">
+            <td class="aside" width="30%" colspan="1">
+                <h3>Aside</h3>
+                <p>Sidebar content, links, or ads go here.</p>
+            </td>
+            <td class="article" width="70%" colspan="3">
+                <h3>Article</h3>
+                <p>Main content goes here.</p>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr class="footer">
+            <td colspan="4"> 2025 My Website. All rights reserved.</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
